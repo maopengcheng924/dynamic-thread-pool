@@ -24,7 +24,14 @@ dynamic:
         # redis port
         port: 6379
         password: 123321
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
+  endpoint:
+    prometheus:
+      enabled: true
 # 日志
 logging:
   level:
