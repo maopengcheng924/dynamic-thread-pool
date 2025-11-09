@@ -1,21 +1,20 @@
-package cn.bugstack.middleware.dynamic.thread.pool.sdk.registry.redis;
+package service.Impl;
 
 import java.time.Duration;
 import java.util.List;
 
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.entity.ThreadPoolConfigEntity;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.valobj.RegistryEnumVO;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.registry.IRegistry;
+import entity.ThreadPoolConfigEntity;
+import service.IRegistry;
+import valobj.RegistryEnumVO;
 import org.redisson.api.RBucket;
 import org.redisson.api.RList;
 import org.redisson.api.RedissonClient;
-import org.redisson.client.RedisClient;
 
 /**
- * 基于Redis的注册中心实现类
- * 负责将线程池的配置信息和运行状态上报到Redis中
+ * 定义线程池信息上报规范
+ * 基于Redis实现线程池配置和状态的存储与共享
  */
-public class RedisRegistry implements IRegistry {
+public class Registry implements IRegistry {
     
     // Redisson客户端实例，用于与Redis进行交互
     private RedissonClient redissonClient;
@@ -24,7 +23,7 @@ public class RedisRegistry implements IRegistry {
      * 构造函数
      * @param redissonClient Redisson客户端实例
      */
-    public RedisRegistry(RedissonClient redissonClient) {
+    public Registry(RedissonClient redissonClient) {
         this.redissonClient = redissonClient;
     }
     

@@ -1,10 +1,10 @@
-package cn.bugstack.middleware.dynamic.thread.pool.sdk.config;
+package config;
 
 import com.alibaba.fastjson.JSON;
 import io.micrometer.core.instrument.ImmutableTag;
 import io.micrometer.core.instrument.Metrics;
 import io.micrometer.core.instrument.Tag;
-//import lombok.extern.slf4j.Slf4j;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -19,7 +19,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * PrometheusConfigRunner 启动
  * 在项目启动时自动扫描所有 ThreadPoolExecutor Bean，并将它们的核心运行指标注册给 Micrometer，供 Prometheus 拉取监控。
  */
-//@Slf4j
+@Slf4j
 @Component
 public class PrometheusConfigRunner implements ApplicationContextAware {
     
@@ -32,18 +32,18 @@ public class PrometheusConfigRunner implements ApplicationContextAware {
     
     @PostConstruct
     public void initPrometheus() {
-        //log.info("=== 开始注册线程池bean ===");
+        log.info("=== 开始注册线程池bean ===");
         try {
             String[] beanNamesForType = applicationContext.getBeanNamesForType(ThreadPoolExecutor.class);
-            //log.info("找到线程池beans {}", JSON.toJSONString(beanNamesForType));
+            log.info("找到线程池beans {}", JSON.toJSONString(beanNamesForType));
             for (String beanName : beanNamesForType) {
                 ThreadPoolExecutor executor = (ThreadPoolExecutor) applicationContext.getBean(beanName);
                 registerThreadPool(applicationContext.getEnvironment()
                                                      .getProperty("spring.application.name", "unknown"), beanName, executor);
             }
-            //log.info("=== 线程池注册完成 ===");
+            log.info("=== 线程池注册完成 ===");
         } catch (Exception e) {
-            //log.error("注册线程池时发生异常", e);
+            log.error("注册线程池时发生异常", e);
         }
     }
     

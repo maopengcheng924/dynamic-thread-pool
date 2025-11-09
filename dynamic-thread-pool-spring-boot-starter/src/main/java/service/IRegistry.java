@@ -1,8 +1,8 @@
-package cn.bugstack.middleware.dynamic.thread.pool.sdk.registry;
+package service;
 
 import java.util.List;
 
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.entity.ThreadPoolConfigEntity;
+import entity.ThreadPoolConfigEntity;
 
 public interface IRegistry {
     

@@ -1,22 +1,19 @@
-package cn.bugstack.middleware.dynamic.thread.pool.sdk.trigger.job;
+package trigger.job;
 
 import java.util.List;
 
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.IDynamicThreadPoolService;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.entity.ThreadPoolConfigEntity;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.registry.IRegistry;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import service.IDynamicThreadPoolService;
+import entity.ThreadPoolConfigEntity;
+import service.IRegistry;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 
 /**
  * 线程池数据上报任务类
  * 定时将应用中的线程池运行状态和配置信息上报到注册中心
  */
+@Slf4j
 public class ThreadPoolDataReportJob {
-    // 日志记录器实例
-    private Logger logger = LoggerFactory.getLogger(ThreadPoolDataReportJob.class);
-    
     // 动态线程池服务接口，用于查询线程池信息
     private final IDynamicThreadPoolService dynamicThreadPoolService;
     
@@ -44,14 +41,14 @@ public class ThreadPoolDataReportJob {
         // 上报线程池列表信息到注册中心
         registry.reportThreadPool(threadPoolConfigEntities);
         // 记录线程池数据上报日志
-        logger.info("【线程池数据上报】{}", threadPoolConfigEntities);
+        log.info("【线程池数据上报】{}", threadPoolConfigEntities);
         
         // 遍历每个线程池，上报其详细配置参数
         for (ThreadPoolConfigEntity threadPoolConfigEntity : threadPoolConfigEntities) {
             // 上报单个线程池的详细配置参数到注册中心
             registry.reportThreadPoolConfigParameter(threadPoolConfigEntity);
             // 记录线程池参数上报日志
-            logger.info("【线程池参数上报】{}", threadPoolConfigEntity);
+            log.info("【线程池参数上报】{}", threadPoolConfigEntity);
         }
     }
     

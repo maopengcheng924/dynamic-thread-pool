@@ -1,19 +1,15 @@
-package cn.bugstack.middleware.dynamic.thread.pool.sdk.config;
+package config;
 
 import io.micrometer.core.instrument.Meter;
 import io.micrometer.core.instrument.config.MeterFilter;
 import io.micrometer.core.instrument.config.MeterFilterReply;
-//import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author bing
- * @date 2025/6/30 17:34
  * @description Prometheus自动配置类 配置指标过滤器，其余配置在测试端的application.yaml里写好。
  */
 
-//@Slf4j
 @Configuration
 public class PrometheusAutoConfig {
     

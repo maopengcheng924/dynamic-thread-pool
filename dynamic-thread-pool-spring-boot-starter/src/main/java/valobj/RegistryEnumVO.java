@@ -1,10 +1,11 @@
-package cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.valobj;
+package valobj;
+
+import lombok.Getter;
 
 /**
- * @author Fuzhengwei bugstack.cn @小傅哥
  * @description 注册中心枚举值对象 key
- * @create 2024-05-12 16:26
  */
+@Getter
 public enum RegistryEnumVO {
     
     THREAD_POOL_CONFIG_LIST_KEY("THREAD_POOL_CONFIG_LIST_KEY", "池化配置列表"),
@@ -17,14 +18,6 @@ public enum RegistryEnumVO {
     RegistryEnumVO(String key, String desc) {
         this.key = key;
         this.desc = desc;
-    }
-    
-    public String getKey() {
-        return key;
-    }
-    
-    public String getDesc() {
-        return desc;
     }
     
     

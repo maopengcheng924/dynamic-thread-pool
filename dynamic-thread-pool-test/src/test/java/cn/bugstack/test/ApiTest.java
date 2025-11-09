@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 
 import javax.annotation.Resource;
 
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.entity.ThreadPoolConfigEntity;
+import entity.ThreadPoolConfigEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

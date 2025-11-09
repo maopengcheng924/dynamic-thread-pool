@@ -1,13 +1,16 @@
-package cn.bugstack.middleware.dynamic.thread.pool.sdk.domain;
+package service.Impl;
 
 import java.util.*;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.entity.ThreadPoolConfigEntity;
+import entity.ThreadPoolConfigEntity;
+import service.IDynamicThreadPoolService;
 
-public class DynamicThreadPoolService implements IDynamicThreadPoolService{
+/**
+ * 提供线程池查询和更新的核心服务接口及实现
+ * 支持查询线程池列表、根据名称查询特定线程池、更新线程池配置等功能
+ */
+public class DynamicThreadPoolService implements IDynamicThreadPoolService {
     
     
     private final Map<String, ThreadPoolExecutor> threadPoolExecutorMap;

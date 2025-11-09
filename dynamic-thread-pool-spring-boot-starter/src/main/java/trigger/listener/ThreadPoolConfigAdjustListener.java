@@ -1,10 +1,10 @@
-package cn.bugstack.middleware.dynamic.thread.pool.sdk.trigger.listener;
+package trigger.listener;
 
 import java.util.List;
 
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.IDynamicThreadPoolService;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.entity.ThreadPoolConfigEntity;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.registry.IRegistry;
+import service.IDynamicThreadPoolService;
+import entity.ThreadPoolConfigEntity;
+import service.IRegistry;
 import org.redisson.api.listener.MessageListener;
 
 /**

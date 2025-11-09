@@ -1,25 +1,20 @@
-package cn.bugstack.middleware.dynamic.thread.pool.sdk.config;
+package config;
 
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.BlockingDeque;
-import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.logging.Logger;
-
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.DynamicThreadPoolService;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.IDynamicThreadPoolService;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.entity.ThreadPoolConfigEntity;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.valobj.RegistryEnumVO;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.registry.IRegistry;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.registry.redis.RedisRegistry;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.trigger.job.ThreadPoolDataReportJob;
-import cn.bugstack.middleware.dynamic.thread.pool.sdk.trigger.listener.ThreadPoolConfigAdjustListener;
+import service.Impl.DynamicThreadPoolService;
+import service.IDynamicThreadPoolService;
+import entity.ThreadPoolConfigEntity;
+import valobj.RegistryEnumVO;
+import service.IRegistry;
+import service.Impl.Registry;
+import trigger.job.ThreadPoolDataReportJob;
+import trigger.listener.ThreadPoolConfigAdjustListener;
 import com.alibaba.fastjson.JSON;
-import jodd.util.StringUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.redisson.Redisson;
-import org.redisson.api.RBucket;
 import org.redisson.api.RTopic;
 import org.redisson.api.RedissonClient;
 import org.redisson.codec.JsonJacksonCodec;
@@ -30,12 +25,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+/**
+ * 核心自动配置类，负责初始化整个动态线程池系统
+ * 创建Redisson客户端、注册中心、线程池服务等核心Bean
+ */
+@Slf4j
 @Configuration
 @EnableConfigurationProperties(DynamicThreadPoolAutoProperties.class)
 @EnableScheduling
 public class DynamicThreadPoolAutoConfig {
-    
-    private final Logger logger = Logger.getLogger(DynamicThreadPoolAutoConfig.class.getName());
     
     private   String applicationName;
     
@@ -60,13 +58,13 @@ public class DynamicThreadPoolAutoConfig {
         
         RedissonClient redissonClient = Redisson.create(config);
         
-        logger.info("动态线程池，注册器（redis）链接初始化完成。{} {} {}");
+        log.info("动态线程池，注册器（redis）链接初始化完成。{} {} {}");
         
         return redissonClient;
     }
     @Bean
     public IRegistry redisRegistry(RedissonClient redissonClient){
-        return new RedisRegistry(redissonClient);
+        return new Registry(redissonClient);
     }
     
     @Bean("dynammicThreadPoolService")
@@ -74,10 +72,10 @@ public class DynamicThreadPoolAutoConfig {
         
         applicationName = applicationContext.getEnvironment().getProperty("spring.application.name");
         if(StringUtils.isBlank(applicationName)){
-            logger.info("applicationName is null");
+            log.info("applicationName is null");
         }
-        logger.info("线程池信息");
-        logger.info(JSON.toJSONString(threadPoolExecutorMap.keySet()));
+        log.info("线程池信息");
+        log.info(JSON.toJSONString(threadPoolExecutorMap.keySet()));
         
         Set<String> threadPoolKeys = threadPoolExecutorMap.keySet();
         for (String threadPoolKey : threadPoolKeys) {
@@ -92,11 +90,11 @@ public class DynamicThreadPoolAutoConfig {
     }
     
     @Bean
-    public ThreadPoolDataReportJob threadPoolDataReportJob(IDynamicThreadPoolService dynamicThreadPoolService,IRegistry  registry){
+    public ThreadPoolDataReportJob threadPoolDataReportJob(IDynamicThreadPoolService dynamicThreadPoolService, IRegistry registry){
         return new ThreadPoolDataReportJob(dynamicThreadPoolService,registry);
     }
     @Bean
-    public ThreadPoolConfigAdjustListener threadPoolConfigAdjustListener( IDynamicThreadPoolService dynamicThreadPoolService,IRegistry  registry ){
+    public ThreadPoolConfigAdjustListener threadPoolConfigAdjustListener(IDynamicThreadPoolService dynamicThreadPoolService, IRegistry registry){
         return new ThreadPoolConfigAdjustListener(dynamicThreadPoolService,registry);
     }
     @Bean(name="dynamicThreadPoolRedisTopic")

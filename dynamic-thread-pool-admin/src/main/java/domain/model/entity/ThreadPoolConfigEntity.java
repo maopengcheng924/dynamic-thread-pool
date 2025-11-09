@@ -1,9 +1,5 @@
-package cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.entity;
+package domain.model.entity;
 
-/**
- * @description 线程池配置实体对象
- * @create 2024-05-12 16:05
- */
 public class ThreadPoolConfigEntity {
     
     /**
@@ -124,4 +120,3 @@ public class ThreadPoolConfigEntity {
     }
     
 }
-
