@@ -1,10 +1,14 @@
 package cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.entity;
 
 /**
- * @description 线程池配置实体对象
- * @create 2024-05-12 16:05
+ * 线程池配置（信息）实体类
  */
 public class ThreadPoolConfigEntity {
+    
+    /**
+     * 告警原因
+     */
+    private String alarmReason;
     
     /**
      * 应用名称
@@ -24,7 +28,7 @@ public class ThreadPoolConfigEntity {
     /**
      * 最大线程数
      */
-    private int maximumPoolSize;
+    private int maxPoolSize;
     
     /**
      * 当前活跃线程数
@@ -59,6 +63,14 @@ public class ThreadPoolConfigEntity {
         this.threadPoolName = threadPoolName;
     }
     
+    public String getAlarmReason() {
+        return alarmReason;
+    }
+    
+    public void setAlarmReason(String alarmReason) {
+        this.alarmReason = alarmReason;
+    }
+    
     public String getAppName() {
         return appName;
     }
@@ -75,12 +87,12 @@ public class ThreadPoolConfigEntity {
         this.corePoolSize = corePoolSize;
     }
     
-    public int getMaximumPoolSize() {
-        return maximumPoolSize;
+    public int getMaxPoolSize() {
+        return maxPoolSize;
     }
     
-    public void setMaximumPoolSize(int maximumPoolSize) {
-        this.maximumPoolSize = maximumPoolSize;
+    public void setMaxPoolSize(int maxPoolSize) {
+        this.maxPoolSize = maxPoolSize;
     }
     
     public int getActiveCount() {
@@ -122,6 +134,4 @@ public class ThreadPoolConfigEntity {
     public void setRemainingCapacity(int remainingCapacity) {
         this.remainingCapacity = remainingCapacity;
     }
-    
 }
-

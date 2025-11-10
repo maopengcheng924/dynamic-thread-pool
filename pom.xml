@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>cn.bugstack.middleware</groupId>
-  <artifactId>dynamic-thread-pool</artifactId>
-  <version>1.0</version>
+  <groupId>cn.zt.middleware</groupId>
+  <artifactId>dynamic-thread-pool-zt</artifactId>
+  <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-
   <modules>
     <module>dynamic-thread-pool-spring-boot-starter</module>
     <module>dynamic-thread-pool-test</module>
@@ -56,11 +55,24 @@
         <version>4.13.1</version>
         <scope>test</scope>
       </dependency>
+      <!--            alibaba dingding sdk-->
+      <dependency>
+        <groupId>com.aliyun</groupId>
+        <artifactId>alibaba-dingtalk-service-sdk</artifactId>
+        <version>2.0.0</version>
+      </dependency>
+
+      <!--    apache codec通用编码工具包-->
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>1.17.0</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
   <build>
-    <finalName>dynamic-thread-pool</finalName>
+    <finalName>dynamic-thread-pool-zt</finalName>
     <resources>
       <resource>
         <directory>src/main/resources</directory>
@@ -120,21 +132,36 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <java_jvm>-Xms1G -Xmx1G -server  -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=test -XX:+DisableExplicitGC -XX:+UseG1GC  -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/xfg-frame-archetype-lite-boot -Xloggc:/export/Logs/xfg-frame-archetype-lite-boot/gc-xfg-frame-archetype-lite-boot.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps</java_jvm>
+        <java_jvm>-Xms1G -Xmx1G -server -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=test
+          -XX:+DisableExplicitGC -XX:+UseG1GC -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods
+          -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/xfg-frame-archetype-lite-boot
+          -Xloggc:/export/Logs/xfg-frame-archetype-lite-boot/gc-xfg-frame-archetype-lite-boot.log
+          -XX:+PrintGCDetails -XX:+PrintGCDateStamps
+        </java_jvm>
         <profileActive>dev</profileActive>
       </properties>
     </profile>
     <profile>
       <id>test</id>
       <properties>
-        <java_jvm>-Xms1G -Xmx1G -server  -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=test -XX:+DisableExplicitGC -XX:+UseG1GC  -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/xfg-frame-archetype-lite-boot -Xloggc:/export/Logs/xfg-frame-archetype-lite-boot/gc-xfg-frame-archetype-lite-boot.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps</java_jvm>
+        <java_jvm>-Xms1G -Xmx1G -server -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=test
+          -XX:+DisableExplicitGC -XX:+UseG1GC -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods
+          -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/xfg-frame-archetype-lite-boot
+          -Xloggc:/export/Logs/xfg-frame-archetype-lite-boot/gc-xfg-frame-archetype-lite-boot.log
+          -XX:+PrintGCDetails -XX:+PrintGCDateStamps
+        </java_jvm>
         <profileActive>test</profileActive>
       </properties>
     </profile>
     <profile>
       <id>prod</id>
       <properties>
-        <java_jvm>-Xms6G -Xmx6G -server  -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=release -XX:+DisableExplicitGC -XX:+UseG1GC  -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/fq-mall-activity-app -Xloggc:/export/Logs/xfg-frame-archetype-lite-boot/gc-xfg-frame-archetype-lite-boot.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps</java_jvm>
+        <java_jvm>-Xms6G -Xmx6G -server -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=release
+          -XX:+DisableExplicitGC -XX:+UseG1GC -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods
+          -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/fq-mall-activity-app
+          -Xloggc:/export/Logs/xfg-frame-archetype-lite-boot/gc-xfg-frame-archetype-lite-boot.log
+          -XX:+PrintGCDetails -XX:+PrintGCDateStamps
+        </java_jvm>
         <profileActive>prod</profileActive>
       </properties>
     </profile>

@@ -1,28 +1,30 @@
 package cn.bugstack;
 
-import org.redisson.spring.starter.RedissonAutoConfiguration;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
 
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
+@SpringBootApplication
 @Configurable
-@SpringBootApplication(exclude = {RedissonAutoConfiguration.class})
+@ConfigurationPropertiesScan
 public class Application {
     
     public static void main(String[] args) {
-        SpringApplication.run(Application.class);
+        SpringApplication.run(Application.class, args);
     }
     
     @Bean
-    public ApplicationRunner applicationRunner(ExecutorService threadPoolExecutor01) {
+    public ApplicationRunner applicationRunner(ExecutorService threadPoolExecutor01,
+                                               ExecutorService threadPoolExecutor02) {
         return args -> {
-            while (true){
+            while (true) {
                 // 创建一个随机时间生成器
                 Random random = new Random();
                 // 随机时间，用于模拟任务启动延迟
@@ -41,7 +43,21 @@ public class Application {
                         TimeUnit.SECONDS.sleep(sleepTime);
                         System.out.println("Task executed for " + sleepTime + " seconds.");
                     } catch (InterruptedException e) {
-                        Thread.currentThread().interrupt();
+                        Thread.currentThread()
+                              .interrupt();
+                    }
+                });
+                
+                threadPoolExecutor02.submit(() -> {
+                    try {
+                        TimeUnit.SECONDS.sleep(initialDelay);
+                        System.out.println("Task started after " + initialDelay + " seconds.");
+                        
+                        TimeUnit.SECONDS.sleep(sleepTime);
+                        System.out.println("Task executed for " + sleepTime + " seconds.");
+                    } catch (InterruptedException e) {
+                        Thread.currentThread()
+                              .interrupt();
                     }
                 });
                 
@@ -49,6 +65,4 @@ public class Application {
             }
         };
     }
-    
-    
 }

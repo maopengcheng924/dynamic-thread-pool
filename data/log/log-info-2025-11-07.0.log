@@ -1,0 +1,609 @@
+25-11-07.20:13:22.572 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 36592 (D:\develop\danamic-thread-pool\dynamic-thread-pool-admin\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.20:13:22.581 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.20:13:23.515 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.20:13:23.518 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.20:13:23.548 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-11-07.20:13:24.097 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+25-11-07.20:13:24.106 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+25-11-07.20:13:24.106 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-11-07.20:13:24.107 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-11-07.20:13:24.270 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-11-07.20:13:24.271 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1637 ms
+25-11-07.20:13:24.643 [main            ] INFO  Version                - Redisson 3.26.0
+25-11-07.20:13:25.455 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.20:13:25.471 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.20:13:26.112 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.20:13:26.133 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+25-11-07.20:13:26.145 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+25-11-07.20:13:26.157 [main            ] INFO  Application            - Started Application in 4.285 seconds (JVM running for 6.27)
+25-11-07.20:13:27.624 [RMI TCP Connection(4)-192.168.150.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-11-07.20:13:27.624 [RMI TCP Connection(4)-192.168.150.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-11-07.20:13:27.625 [RMI TCP Connection(4)-192.168.150.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-11-07.20:13:39.650 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 36248 (D:\develop\danamic-thread-pool\dynamic-thread-pool-test\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.20:13:39.653 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.20:13:40.822 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.20:13:40.825 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.20:13:40.875 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+25-11-07.20:13:41.512 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8093 (http)
+25-11-07.20:13:41.519 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8093"]
+25-11-07.20:13:41.520 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-11-07.20:13:41.520 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-11-07.20:13:41.675 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-11-07.20:13:41.675 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1959 ms
+25-11-07.20:13:42.407 [main            ] INFO  Version                - Redisson 3.26.0
+25-11-07.20:13:43.204 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.20:13:43.239 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.20:13:43.344 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。{} {} {}
+25-11-07.20:13:43.354 [main            ] INFO  DynamicThreadPoolAutoConfig - 线程池信息
+25-11-07.20:13:43.496 [main            ] INFO  DynamicThreadPoolAutoConfig - ["threadPoolExecutor01","threadPoolExecutor02"]
+25-11-07.20:13:44.000 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.20:13:44.039 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8093"]
+25-11-07.20:13:44.053 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8093 (http) with context path ''
+25-11-07.20:13:44.071 [main            ] INFO  Application            - Started Application in 5.18 seconds (JVM running for 6.785)
+25-11-07.20:14:00.029 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@7c690ab4, domain.model.entity.ThreadPoolConfigEntity@6b1571f9]
+25-11-07.20:14:00.031 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7c690ab4
+25-11-07.20:14:00.032 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6b1571f9
+25-11-07.20:14:30.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@2967218, domain.model.entity.ThreadPoolConfigEntity@6f5b50c3]
+25-11-07.20:14:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2967218
+25-11-07.20:14:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6f5b50c3
+25-11-07.20:15:00.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@5bd3db36, domain.model.entity.ThreadPoolConfigEntity@1b09f30c]
+25-11-07.20:15:00.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5bd3db36
+25-11-07.20:15:00.022 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1b09f30c
+25-11-07.20:23:45.419 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 34532 (D:\develop\danamic-thread-pool\dynamic-thread-pool-test\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.20:23:45.423 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.20:23:46.325 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.20:23:46.327 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.20:23:46.358 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-11-07.20:23:46.865 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8093 (http)
+25-11-07.20:23:46.873 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8093"]
+25-11-07.20:23:46.874 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-11-07.20:23:46.874 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-11-07.20:23:47.029 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-11-07.20:23:47.029 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1549 ms
+25-11-07.20:23:47.658 [main            ] INFO  Version                - Redisson 3.26.0
+25-11-07.20:23:48.414 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.20:23:48.441 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.20:23:48.535 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。{} {} {}
+25-11-07.20:23:48.542 [main            ] INFO  DynamicThreadPoolAutoConfig - 线程池信息
+25-11-07.20:23:48.617 [main            ] INFO  DynamicThreadPoolAutoConfig - ["threadPoolExecutor01","threadPoolExecutor02"]
+25-11-07.20:23:49.005 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.20:23:49.036 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8093"]
+25-11-07.20:23:49.046 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8093 (http) with context path ''
+25-11-07.20:23:49.063 [main            ] INFO  Application            - Started Application in 4.256 seconds (JVM running for 5.77)
+25-11-07.20:24:00.030 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@2eec3236, domain.model.entity.ThreadPoolConfigEntity@5ca9f127]
+25-11-07.20:24:00.032 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2eec3236
+25-11-07.20:24:00.033 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5ca9f127
+25-11-07.20:24:15.875 [http-nio-8093-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-11-07.20:24:15.875 [http-nio-8093-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-11-07.20:24:15.876 [http-nio-8093-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-11-07.20:24:30.002 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@356888e4, domain.model.entity.ThreadPoolConfigEntity@33c47529]
+25-11-07.20:24:30.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@356888e4
+25-11-07.20:24:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@33c47529
+25-11-07.20:24:42.164 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 36532 (D:\develop\danamic-thread-pool\dynamic-thread-pool-admin\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.20:24:42.168 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.20:24:43.163 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.20:24:43.165 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.20:24:43.190 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-11-07.20:24:43.606 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+25-11-07.20:24:43.613 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+25-11-07.20:24:43.613 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-11-07.20:24:43.613 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-11-07.20:24:43.766 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-11-07.20:24:43.766 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1540 ms
+25-11-07.20:24:44.211 [main            ] INFO  Version                - Redisson 3.26.0
+25-11-07.20:24:44.995 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.20:24:45.012 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.20:24:45.644 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.20:24:45.667 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+25-11-07.20:24:45.677 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+25-11-07.20:24:45.690 [main            ] INFO  Application            - Started Application in 4.192 seconds (JVM running for 5.722)
+25-11-07.20:24:46.807 [RMI TCP Connection(4)-192.168.150.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-11-07.20:24:46.808 [RMI TCP Connection(4)-192.168.150.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-11-07.20:24:46.810 [RMI TCP Connection(4)-192.168.150.1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+25-11-07.20:25:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@7cf68ce5, domain.model.entity.ThreadPoolConfigEntity@6f456a95]
+25-11-07.20:25:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7cf68ce5
+25-11-07.20:25:00.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6f456a95
+25-11-07.20:25:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@1e1bf031, domain.model.entity.ThreadPoolConfigEntity@e66b3e6]
+25-11-07.20:25:30.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1e1bf031
+25-11-07.20:25:30.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@e66b3e6
+25-11-07.20:26:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@463f976b, domain.model.entity.ThreadPoolConfigEntity@2ea4cfb]
+25-11-07.20:26:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@463f976b
+25-11-07.20:26:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2ea4cfb
+25-11-07.20:26:30.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@4331beef, domain.model.entity.ThreadPoolConfigEntity@7873dcec]
+25-11-07.20:26:30.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4331beef
+25-11-07.20:26:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7873dcec
+25-11-07.20:27:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@424d9846, domain.model.entity.ThreadPoolConfigEntity@12109960]
+25-11-07.20:27:00.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@424d9846
+25-11-07.20:27:00.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@12109960
+25-11-07.20:27:30.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@5c989b0b, domain.model.entity.ThreadPoolConfigEntity@3aeab8c8]
+25-11-07.20:27:30.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5c989b0b
+25-11-07.20:27:30.021 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3aeab8c8
+25-11-07.20:28:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@14cb887b, domain.model.entity.ThreadPoolConfigEntity@286c81b]
+25-11-07.20:28:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@14cb887b
+25-11-07.20:28:00.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@286c81b
+25-11-07.20:28:30.003 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@1a5e5b83, domain.model.entity.ThreadPoolConfigEntity@759d8cf8]
+25-11-07.20:28:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1a5e5b83
+25-11-07.20:28:30.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@759d8cf8
+25-11-07.20:29:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@3d5d4a60, domain.model.entity.ThreadPoolConfigEntity@92f8bc0]
+25-11-07.20:29:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3d5d4a60
+25-11-07.20:29:00.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@92f8bc0
+25-11-07.20:29:30.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@61454b25, domain.model.entity.ThreadPoolConfigEntity@78a6e1b9]
+25-11-07.20:29:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@61454b25
+25-11-07.20:29:30.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@78a6e1b9
+25-11-07.20:30:00.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@2fffba87, domain.model.entity.ThreadPoolConfigEntity@5afb5533]
+25-11-07.20:30:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2fffba87
+25-11-07.20:30:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5afb5533
+25-11-07.20:30:30.003 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@112c312a, domain.model.entity.ThreadPoolConfigEntity@5e48b19f]
+25-11-07.20:30:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@112c312a
+25-11-07.20:30:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5e48b19f
+25-11-07.20:31:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@c310353, domain.model.entity.ThreadPoolConfigEntity@c638d2b]
+25-11-07.20:31:00.021 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@c310353
+25-11-07.20:31:00.023 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@c638d2b
+25-11-07.20:31:30.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@67e9caac, domain.model.entity.ThreadPoolConfigEntity@63c67699]
+25-11-07.20:31:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@67e9caac
+25-11-07.20:31:30.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@63c67699
+25-11-07.20:32:00.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@735ca51f, domain.model.entity.ThreadPoolConfigEntity@3d63f2a0]
+25-11-07.20:32:00.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@735ca51f
+25-11-07.20:32:00.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3d63f2a0
+25-11-07.20:32:30.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@14f6f30a, domain.model.entity.ThreadPoolConfigEntity@44d42db3]
+25-11-07.20:32:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@14f6f30a
+25-11-07.20:32:30.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@44d42db3
+25-11-07.20:33:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@52b61c6b, domain.model.entity.ThreadPoolConfigEntity@70e2026f]
+25-11-07.20:33:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@52b61c6b
+25-11-07.20:33:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@70e2026f
+25-11-07.20:33:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@53afc1da, domain.model.entity.ThreadPoolConfigEntity@3673c7a9]
+25-11-07.20:33:30.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@53afc1da
+25-11-07.20:33:30.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3673c7a9
+25-11-07.20:34:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@5444d048, domain.model.entity.ThreadPoolConfigEntity@34d551d5]
+25-11-07.20:34:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5444d048
+25-11-07.20:34:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@34d551d5
+25-11-07.20:34:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@1959e784, domain.model.entity.ThreadPoolConfigEntity@31bf2589]
+25-11-07.20:34:30.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1959e784
+25-11-07.20:34:30.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@31bf2589
+25-11-07.20:35:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@430b6566, domain.model.entity.ThreadPoolConfigEntity@5dcedf2b]
+25-11-07.20:35:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@430b6566
+25-11-07.20:35:00.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5dcedf2b
+25-11-07.20:35:30.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@b7d76d1, domain.model.entity.ThreadPoolConfigEntity@43a6995a]
+25-11-07.20:35:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@b7d76d1
+25-11-07.20:35:30.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@43a6995a
+25-11-07.20:36:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@5b1ef41d, domain.model.entity.ThreadPoolConfigEntity@70024fd2]
+25-11-07.20:36:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5b1ef41d
+25-11-07.20:36:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@70024fd2
+25-11-07.20:36:30.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@10a974fd, domain.model.entity.ThreadPoolConfigEntity@673253fb]
+25-11-07.20:36:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@10a974fd
+25-11-07.20:36:30.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@673253fb
+25-11-07.20:37:00.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@4b20ed1c, domain.model.entity.ThreadPoolConfigEntity@293e4775]
+25-11-07.20:37:00.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4b20ed1c
+25-11-07.20:37:00.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@293e4775
+25-11-07.20:37:30.001 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@4bb7bde9, domain.model.entity.ThreadPoolConfigEntity@10695e05]
+25-11-07.20:37:30.003 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4bb7bde9
+25-11-07.20:37:30.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@10695e05
+25-11-07.20:38:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@3cafee73, domain.model.entity.ThreadPoolConfigEntity@24440260]
+25-11-07.20:38:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3cafee73
+25-11-07.20:38:00.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@24440260
+25-11-07.20:38:30.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@52eaabf4, domain.model.entity.ThreadPoolConfigEntity@8a95eda]
+25-11-07.20:38:30.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@52eaabf4
+25-11-07.20:38:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@8a95eda
+25-11-07.20:39:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@4bb6f5ca, domain.model.entity.ThreadPoolConfigEntity@4fe5b9de]
+25-11-07.20:39:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4bb6f5ca
+25-11-07.20:39:00.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4fe5b9de
+25-11-07.20:39:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@48d71edd, domain.model.entity.ThreadPoolConfigEntity@acac693]
+25-11-07.20:39:30.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@48d71edd
+25-11-07.20:39:30.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@acac693
+25-11-07.20:40:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@76ae7aa5, domain.model.entity.ThreadPoolConfigEntity@146716e7]
+25-11-07.20:40:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@76ae7aa5
+25-11-07.20:40:00.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@146716e7
+25-11-07.20:40:30.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@64b6d340, domain.model.entity.ThreadPoolConfigEntity@38147f1b]
+25-11-07.20:40:30.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@64b6d340
+25-11-07.20:40:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@38147f1b
+25-11-07.20:41:00.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@3d6a51ee, domain.model.entity.ThreadPoolConfigEntity@1116a88a]
+25-11-07.20:41:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3d6a51ee
+25-11-07.20:41:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1116a88a
+25-11-07.20:41:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@43e8453b, domain.model.entity.ThreadPoolConfigEntity@589f06fa]
+25-11-07.20:41:30.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@43e8453b
+25-11-07.20:41:30.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@589f06fa
+25-11-07.20:42:00.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@3715d926, domain.model.entity.ThreadPoolConfigEntity@136365b6]
+25-11-07.20:42:00.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3715d926
+25-11-07.20:42:00.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@136365b6
+25-11-07.20:42:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@12a32b7c, domain.model.entity.ThreadPoolConfigEntity@322b4704]
+25-11-07.20:42:30.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@12a32b7c
+25-11-07.20:42:30.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@322b4704
+25-11-07.20:43:00.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@2bee648e, domain.model.entity.ThreadPoolConfigEntity@2328ea90]
+25-11-07.20:43:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2bee648e
+25-11-07.20:43:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2328ea90
+25-11-07.20:43:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@18b26aa4, domain.model.entity.ThreadPoolConfigEntity@7caa6f48]
+25-11-07.20:43:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@18b26aa4
+25-11-07.20:43:30.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7caa6f48
+25-11-07.20:44:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@a6d0c52, domain.model.entity.ThreadPoolConfigEntity@4f69b0d9]
+25-11-07.20:44:00.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@a6d0c52
+25-11-07.20:44:00.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4f69b0d9
+25-11-07.20:44:30.003 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@448504da, domain.model.entity.ThreadPoolConfigEntity@6bfae32d]
+25-11-07.20:44:30.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@448504da
+25-11-07.20:44:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6bfae32d
+25-11-07.20:45:00.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@9177d9c, domain.model.entity.ThreadPoolConfigEntity@b7afb1f]
+25-11-07.20:45:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@9177d9c
+25-11-07.20:45:00.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@b7afb1f
+25-11-07.20:45:30.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@67358d7e, domain.model.entity.ThreadPoolConfigEntity@5b6af93e]
+25-11-07.20:45:30.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@67358d7e
+25-11-07.20:45:30.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5b6af93e
+25-11-07.20:46:00.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@69a39452, domain.model.entity.ThreadPoolConfigEntity@35dd387a]
+25-11-07.20:46:00.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@69a39452
+25-11-07.20:46:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@35dd387a
+25-11-07.20:46:30.003 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@7ec80dc2, domain.model.entity.ThreadPoolConfigEntity@7267b82c]
+25-11-07.20:46:30.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7ec80dc2
+25-11-07.20:46:30.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7267b82c
+25-11-07.20:47:00.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@713a336, domain.model.entity.ThreadPoolConfigEntity@5b514546]
+25-11-07.20:47:00.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@713a336
+25-11-07.20:47:00.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5b514546
+25-11-07.20:47:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@6549e5f3, domain.model.entity.ThreadPoolConfigEntity@2a2097ae]
+25-11-07.20:47:30.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6549e5f3
+25-11-07.20:47:30.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2a2097ae
+25-11-07.20:48:00.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@30309bcf, domain.model.entity.ThreadPoolConfigEntity@611a83fa]
+25-11-07.20:48:00.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@30309bcf
+25-11-07.20:48:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@611a83fa
+25-11-07.20:48:30.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@4b568457, domain.model.entity.ThreadPoolConfigEntity@6565e774]
+25-11-07.20:48:30.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4b568457
+25-11-07.20:48:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6565e774
+25-11-07.20:49:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@648fba6a, domain.model.entity.ThreadPoolConfigEntity@1b84fe90]
+25-11-07.20:49:00.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@648fba6a
+25-11-07.20:49:00.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1b84fe90
+25-11-07.20:49:30.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@5190e4d3, domain.model.entity.ThreadPoolConfigEntity@7fb62053]
+25-11-07.20:49:30.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5190e4d3
+25-11-07.20:49:30.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7fb62053
+25-11-07.20:50:00.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@66f38925, domain.model.entity.ThreadPoolConfigEntity@5abf9b15]
+25-11-07.20:50:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@66f38925
+25-11-07.20:50:00.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5abf9b15
+25-11-07.20:50:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@cdf4aed, domain.model.entity.ThreadPoolConfigEntity@4225479d]
+25-11-07.20:50:30.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@cdf4aed
+25-11-07.20:50:30.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4225479d
+25-11-07.20:51:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@38e5545d, domain.model.entity.ThreadPoolConfigEntity@1ea40767]
+25-11-07.20:51:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@38e5545d
+25-11-07.20:51:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1ea40767
+25-11-07.20:51:30.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@68daae7c, domain.model.entity.ThreadPoolConfigEntity@ab0555]
+25-11-07.20:51:30.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@68daae7c
+25-11-07.20:51:30.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@ab0555
+25-11-07.20:52:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@12feeea1, domain.model.entity.ThreadPoolConfigEntity@2c5f5ca6]
+25-11-07.20:52:00.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@12feeea1
+25-11-07.20:52:00.021 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2c5f5ca6
+25-11-07.20:52:30.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@11cbae1f, domain.model.entity.ThreadPoolConfigEntity@499290de]
+25-11-07.20:52:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@11cbae1f
+25-11-07.20:52:30.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@499290de
+25-11-07.20:53:00.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@2c7cf4ab, domain.model.entity.ThreadPoolConfigEntity@7a9027ee]
+25-11-07.20:53:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2c7cf4ab
+25-11-07.20:53:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7a9027ee
+25-11-07.20:53:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@36e7c5f5, domain.model.entity.ThreadPoolConfigEntity@6b2ea797]
+25-11-07.20:53:30.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@36e7c5f5
+25-11-07.20:53:30.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6b2ea797
+25-11-07.20:54:00.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@5b68334b, domain.model.entity.ThreadPoolConfigEntity@53289dbe]
+25-11-07.20:54:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5b68334b
+25-11-07.20:54:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@53289dbe
+25-11-07.20:54:30.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@4d248a53, domain.model.entity.ThreadPoolConfigEntity@ba12775]
+25-11-07.20:54:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4d248a53
+25-11-07.20:54:30.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@ba12775
+25-11-07.20:55:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@1149af21, domain.model.entity.ThreadPoolConfigEntity@61b15db]
+25-11-07.20:55:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1149af21
+25-11-07.20:55:00.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@61b15db
+25-11-07.20:55:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@6f847159, domain.model.entity.ThreadPoolConfigEntity@6d9c7953]
+25-11-07.20:55:30.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6f847159
+25-11-07.20:55:30.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6d9c7953
+25-11-07.20:56:00.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@3170e366, domain.model.entity.ThreadPoolConfigEntity@6f1b8d5e]
+25-11-07.20:56:00.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3170e366
+25-11-07.20:56:00.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6f1b8d5e
+25-11-07.20:56:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@23d9375d, domain.model.entity.ThreadPoolConfigEntity@2d019494]
+25-11-07.20:56:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@23d9375d
+25-11-07.20:56:30.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2d019494
+25-11-07.20:57:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@1b5c2981, domain.model.entity.ThreadPoolConfigEntity@289e26c9]
+25-11-07.20:57:00.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1b5c2981
+25-11-07.20:57:00.021 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@289e26c9
+25-11-07.20:57:30.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@42978f58, domain.model.entity.ThreadPoolConfigEntity@631306aa]
+25-11-07.20:57:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@42978f58
+25-11-07.20:57:30.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@631306aa
+25-11-07.20:58:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@4008eef0, domain.model.entity.ThreadPoolConfigEntity@3e9b44e6]
+25-11-07.20:58:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4008eef0
+25-11-07.20:58:00.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3e9b44e6
+25-11-07.20:58:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@45c633c9, domain.model.entity.ThreadPoolConfigEntity@15b4f272]
+25-11-07.20:58:30.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@45c633c9
+25-11-07.20:58:30.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@15b4f272
+25-11-07.20:59:00.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@12ccf15a, domain.model.entity.ThreadPoolConfigEntity@76942b91]
+25-11-07.20:59:00.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@12ccf15a
+25-11-07.20:59:00.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@76942b91
+25-11-07.20:59:30.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@2b806f1, domain.model.entity.ThreadPoolConfigEntity@30ad43b6]
+25-11-07.20:59:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2b806f1
+25-11-07.20:59:30.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@30ad43b6
+25-11-07.21:00:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@451e22d8, domain.model.entity.ThreadPoolConfigEntity@12015149]
+25-11-07.21:00:00.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@451e22d8
+25-11-07.21:00:00.021 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@12015149
+25-11-07.21:00:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@504c5276, domain.model.entity.ThreadPoolConfigEntity@aa60b3a]
+25-11-07.21:00:30.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@504c5276
+25-11-07.21:00:30.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@aa60b3a
+25-11-07.21:01:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@3e9af054, domain.model.entity.ThreadPoolConfigEntity@260975d7]
+25-11-07.21:01:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3e9af054
+25-11-07.21:01:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@260975d7
+25-11-07.21:01:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@14645c82, domain.model.entity.ThreadPoolConfigEntity@2e217aef]
+25-11-07.21:01:30.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@14645c82
+25-11-07.21:01:30.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2e217aef
+25-11-07.21:02:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@4750272f, domain.model.entity.ThreadPoolConfigEntity@2a1a55df]
+25-11-07.21:02:00.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4750272f
+25-11-07.21:02:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2a1a55df
+25-11-07.21:02:30.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@1cac9c52, domain.model.entity.ThreadPoolConfigEntity@39ff6b2a]
+25-11-07.21:02:30.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1cac9c52
+25-11-07.21:02:30.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@39ff6b2a
+25-11-07.21:03:00.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@7fd04a65, domain.model.entity.ThreadPoolConfigEntity@79c4ced]
+25-11-07.21:03:00.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7fd04a65
+25-11-07.21:03:00.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@79c4ced
+25-11-07.21:03:30.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@7faa0e40, domain.model.entity.ThreadPoolConfigEntity@3d4e9ca4]
+25-11-07.21:03:30.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7faa0e40
+25-11-07.21:03:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3d4e9ca4
+25-11-07.21:04:00.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@40b07a0a, domain.model.entity.ThreadPoolConfigEntity@25aeadd5]
+25-11-07.21:04:00.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@40b07a0a
+25-11-07.21:04:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@25aeadd5
+25-11-07.21:04:30.001 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@a596f2e, domain.model.entity.ThreadPoolConfigEntity@43bb697d]
+25-11-07.21:04:30.003 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@a596f2e
+25-11-07.21:04:30.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@43bb697d
+25-11-07.21:05:00.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@183b2a, domain.model.entity.ThreadPoolConfigEntity@5008fef9]
+25-11-07.21:05:00.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@183b2a
+25-11-07.21:05:00.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5008fef9
+25-11-07.21:05:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@1169dbc9, domain.model.entity.ThreadPoolConfigEntity@981b818]
+25-11-07.21:05:30.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1169dbc9
+25-11-07.21:05:30.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@981b818
+25-11-07.21:06:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@48810369, domain.model.entity.ThreadPoolConfigEntity@5fe9c3b6]
+25-11-07.21:06:00.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@48810369
+25-11-07.21:06:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@5fe9c3b6
+25-11-07.21:06:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@81fc11, domain.model.entity.ThreadPoolConfigEntity@444c561]
+25-11-07.21:06:30.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@81fc11
+25-11-07.21:06:30.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@444c561
+25-11-07.21:07:00.003 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@449e04cb, domain.model.entity.ThreadPoolConfigEntity@55fb9b9d]
+25-11-07.21:07:00.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@449e04cb
+25-11-07.21:07:00.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@55fb9b9d
+25-11-07.21:07:30.002 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@78582db9, domain.model.entity.ThreadPoolConfigEntity@4cd4d625]
+25-11-07.21:07:30.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@78582db9
+25-11-07.21:07:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4cd4d625
+25-11-07.21:08:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@457a9b51, domain.model.entity.ThreadPoolConfigEntity@333b9805]
+25-11-07.21:08:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@457a9b51
+25-11-07.21:08:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@333b9805
+25-11-07.21:08:30.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@a375e3e, domain.model.entity.ThreadPoolConfigEntity@6038d4a3]
+25-11-07.21:08:30.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@a375e3e
+25-11-07.21:08:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6038d4a3
+25-11-07.21:09:00.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@71097be6, domain.model.entity.ThreadPoolConfigEntity@1e9d3e72]
+25-11-07.21:09:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@71097be6
+25-11-07.21:09:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1e9d3e72
+25-11-07.21:09:30.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@2e6b5531, domain.model.entity.ThreadPoolConfigEntity@8d00193]
+25-11-07.21:09:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2e6b5531
+25-11-07.21:09:30.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@8d00193
+25-11-07.21:10:00.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@323c9d24, domain.model.entity.ThreadPoolConfigEntity@45a55bbf]
+25-11-07.21:10:00.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@323c9d24
+25-11-07.21:10:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@45a55bbf
+25-11-07.21:10:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@39470fcf, domain.model.entity.ThreadPoolConfigEntity@6f44607e]
+25-11-07.21:10:30.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@39470fcf
+25-11-07.21:10:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6f44607e
+25-11-07.21:11:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@d3a68a, domain.model.entity.ThreadPoolConfigEntity@2b0c3613]
+25-11-07.21:11:00.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@d3a68a
+25-11-07.21:11:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2b0c3613
+25-11-07.21:11:30.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@2a347dca, domain.model.entity.ThreadPoolConfigEntity@66bfaf62]
+25-11-07.21:11:30.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2a347dca
+25-11-07.21:11:30.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@66bfaf62
+25-11-07.21:12:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@7bc5a2c9, domain.model.entity.ThreadPoolConfigEntity@3133bf0c]
+25-11-07.21:12:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@7bc5a2c9
+25-11-07.21:12:00.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3133bf0c
+25-11-07.21:12:18.593 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 10076 (D:\develop\danamic-thread-pool\dynamic-thread-pool-admin\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.21:12:18.596 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.21:12:19.350 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.21:12:19.352 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.21:12:19.378 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-11-07.21:12:19.808 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+25-11-07.21:12:19.816 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+25-11-07.21:12:19.816 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-11-07.21:12:19.816 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-11-07.21:12:19.974 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-11-07.21:12:19.974 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1332 ms
+25-11-07.21:12:20.346 [main            ] INFO  Version                - Redisson 3.26.0
+25-11-07.21:12:21.127 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.21:12:21.142 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.21:12:21.759 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.21:12:21.779 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+25-11-07.21:12:21.789 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+25-11-07.21:12:21.801 [main            ] INFO  Application            - Started Application in 3.855 seconds (JVM running for 5.417)
+25-11-07.21:12:23.585 [RMI TCP Connection(5)-192.168.150.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-11-07.21:12:23.585 [RMI TCP Connection(5)-192.168.150.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-11-07.21:12:23.587 [RMI TCP Connection(5)-192.168.150.1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+25-11-07.21:12:30.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@38604ecd, domain.model.entity.ThreadPoolConfigEntity@23bf221c]
+25-11-07.21:12:30.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@38604ecd
+25-11-07.21:12:30.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@23bf221c
+25-11-07.21:12:40.629 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 38924 (D:\develop\danamic-thread-pool\dynamic-thread-pool-test\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.21:12:40.631 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.21:12:40.968 [main            ] ERROR SpringApplication      - Application run failed
+java.lang.IllegalStateException: Unable to read meta-data for class cn.bugstack.middleware.dynamic.thread.pool.sdk.config.DynamicThreadPoolAutoConfigcn.bugstack.middleware.dynamic.thread.pool.sdk.config.PrometheusAutoConfig
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getAnnotationMetadata(AutoConfigurationSorter.java:237)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getOrder(AutoConfigurationSorter.java:208)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.access$000(AutoConfigurationSorter.java:154)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter.lambda$getInPriorityOrder$0(AutoConfigurationSorter.java:64)
+	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.util.TimSort.sort(TimSort.java:234)
+	at java.util.Arrays.sort(Arrays.java:1512)
+	at java.util.ArrayList.sort(ArrayList.java:1464)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter.getInPriorityOrder(AutoConfigurationSorter.java:62)
+	at org.springframework.boot.autoconfigure.AutoConfigurationImportSelector$AutoConfigurationGroup.sortAutoConfigurations(AutoConfigurationImportSelector.java:478)
+	at org.springframework.boot.autoconfigure.AutoConfigurationImportSelector$AutoConfigurationGroup.selectImports(AutoConfigurationImportSelector.java:463)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGrouping.getImports(ConfigurationClassParser.java:882)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:192)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at cn.bugstack.Application.main(Application.java:19)
+Caused by: java.io.FileNotFoundException: class path resource [cn/bugstack/middleware/dynamic/thread/pool/sdk/config/DynamicThreadPoolAutoConfigcn/bugstack/middleware/dynamic/thread/pool/sdk/config/PrometheusAutoConfig.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:199)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:55)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getAnnotationMetadata(AutoConfigurationSorter.java:233)
+	... 27 common frames omitted
+25-11-07.21:13:49.861 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 26004 (D:\develop\danamic-thread-pool\dynamic-thread-pool-test\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.21:13:49.865 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.21:13:50.186 [main            ] ERROR SpringApplication      - Application run failed
+java.lang.IllegalStateException: Unable to read meta-data for class config.PrometheusAutoConfig
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getAnnotationMetadata(AutoConfigurationSorter.java:237)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getOrder(AutoConfigurationSorter.java:208)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.access$000(AutoConfigurationSorter.java:154)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter.lambda$getInPriorityOrder$0(AutoConfigurationSorter.java:63)
+	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.util.TimSort.sort(TimSort.java:234)
+	at java.util.Arrays.sort(Arrays.java:1512)
+	at java.util.ArrayList.sort(ArrayList.java:1464)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter.getInPriorityOrder(AutoConfigurationSorter.java:62)
+	at org.springframework.boot.autoconfigure.AutoConfigurationImportSelector$AutoConfigurationGroup.sortAutoConfigurations(AutoConfigurationImportSelector.java:478)
+	at org.springframework.boot.autoconfigure.AutoConfigurationImportSelector$AutoConfigurationGroup.selectImports(AutoConfigurationImportSelector.java:463)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGrouping.getImports(ConfigurationClassParser.java:882)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:192)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at cn.bugstack.Application.main(Application.java:19)
+Caused by: java.io.FileNotFoundException: class path resource [cn/bugstack/middleware/dynamic/thread/pool/sdk/config/PrometheusAutoConfig.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:199)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:55)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getAnnotationMetadata(AutoConfigurationSorter.java:233)
+	... 27 common frames omitted
+25-11-07.21:16:59.855 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 39120 (D:\develop\danamic-thread-pool\dynamic-thread-pool-test\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.21:16:59.858 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.21:17:00.737 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.21:17:00.739 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.21:17:00.775 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-11-07.21:17:01.268 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8093 (http)
+25-11-07.21:17:01.276 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8093"]
+25-11-07.21:17:01.276 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-11-07.21:17:01.276 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-11-07.21:17:01.420 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-11-07.21:17:01.421 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1523 ms
+25-11-07.21:17:02.068 [main            ] INFO  Version                - Redisson 3.26.0
+25-11-07.21:17:02.811 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.21:17:02.838 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.21:17:02.935 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。{} {} {}
+25-11-07.21:17:02.953 [main            ] INFO  DynamicThreadPoolAutoConfig - 线程池信息
+25-11-07.21:17:03.039 [main            ] INFO  DynamicThreadPoolAutoConfig - ["threadPoolExecutor01","threadPoolExecutor02"]
+25-11-07.21:17:03.430 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.21:17:03.454 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8093"]
+25-11-07.21:17:03.465 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8093 (http) with context path ''
+25-11-07.21:17:03.479 [main            ] INFO  Application            - Started Application in 4.28 seconds (JVM running for 5.663)
+25-11-07.21:17:05.176 [http-nio-8093-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-11-07.21:17:05.176 [http-nio-8093-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-11-07.21:17:05.178 [http-nio-8093-exec-1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+25-11-07.21:17:30.028 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@60a4f4e2, domain.model.entity.ThreadPoolConfigEntity@563235ef]
+25-11-07.21:17:30.030 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@60a4f4e2
+25-11-07.21:17:30.032 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@563235ef
+25-11-07.21:17:30.953 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 34160 (D:\develop\danamic-thread-pool\dynamic-thread-pool-admin\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.21:17:30.957 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.21:17:31.670 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.21:17:31.672 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.21:17:31.695 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+25-11-07.21:17:32.109 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+25-11-07.21:17:32.117 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+25-11-07.21:17:32.117 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-11-07.21:17:32.117 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-11-07.21:17:32.274 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-11-07.21:17:32.274 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1268 ms
+25-11-07.21:17:32.611 [main            ] INFO  Version                - Redisson 3.26.0
+25-11-07.21:17:33.363 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.21:17:33.378 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.21:17:33.961 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.21:17:33.982 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+25-11-07.21:17:33.990 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+25-11-07.21:17:34.002 [main            ] INFO  Application            - Started Application in 3.632 seconds (JVM running for 5.062)
+25-11-07.21:17:36.002 [RMI TCP Connection(5)-192.168.150.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-11-07.21:17:36.003 [RMI TCP Connection(5)-192.168.150.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-11-07.21:17:36.004 [RMI TCP Connection(5)-192.168.150.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-11-07.21:18:00.003 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@1c4ef119, domain.model.entity.ThreadPoolConfigEntity@46f336f1]
+25-11-07.21:18:00.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@1c4ef119
+25-11-07.21:18:00.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@46f336f1
+25-11-07.21:18:30.003 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@137c929, domain.model.entity.ThreadPoolConfigEntity@466d19ad]
+25-11-07.21:18:30.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@137c929
+25-11-07.21:18:30.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@466d19ad
+25-11-07.21:19:00.001 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@2dc0fe40, domain.model.entity.ThreadPoolConfigEntity@72db11b7]
+25-11-07.21:19:00.003 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2dc0fe40
+25-11-07.21:19:00.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@72db11b7
+25-11-07.21:19:30.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@4d1af044, domain.model.entity.ThreadPoolConfigEntity@6314283b]
+25-11-07.21:19:30.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@4d1af044
+25-11-07.21:19:30.021 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@6314283b
+25-11-07.21:20:00.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@498cf8e7, domain.model.entity.ThreadPoolConfigEntity@63f00ec8]
+25-11-07.21:20:00.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@498cf8e7
+25-11-07.21:20:00.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@63f00ec8
+25-11-07.21:20:30.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@79f24a22, domain.model.entity.ThreadPoolConfigEntity@3be5f0d7]
+25-11-07.21:20:30.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@79f24a22
+25-11-07.21:20:30.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@3be5f0d7
+25-11-07.21:20:54.372 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 38176 (D:\develop\danamic-thread-pool\dynamic-thread-pool-admin\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.21:20:54.375 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.21:20:55.238 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.21:20:55.241 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.21:20:55.275 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-11-07.21:20:55.713 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+25-11-07.21:20:55.722 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+25-11-07.21:20:55.722 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-11-07.21:20:55.722 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-11-07.21:20:55.870 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-11-07.21:20:55.870 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1438 ms
+25-11-07.21:20:56.224 [main            ] INFO  Version                - Redisson 3.26.0
+25-11-07.21:20:57.061 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.21:20:57.076 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.21:20:57.783 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.21:20:57.815 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+25-11-07.21:20:57.829 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+25-11-07.21:20:57.843 [main            ] INFO  Application            - Started Application in 4.406 seconds (JVM running for 6.242)
+25-11-07.21:20:58.817 [RMI TCP Connection(3)-192.168.150.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-11-07.21:20:58.817 [RMI TCP Connection(3)-192.168.150.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-11-07.21:20:58.819 [RMI TCP Connection(3)-192.168.150.1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+25-11-07.21:21:02.604 [main            ] INFO  Application            - Starting Application using Java 1.8.0_442 on mao with PID 20044 (D:\develop\danamic-thread-pool\dynamic-thread-pool-test\target\classes started by 11275 in D:\develop\danamic-thread-pool)
+25-11-07.21:21:02.607 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-11-07.21:21:03.463 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.21:21:03.465 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.21:21:03.500 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-11-07.21:21:04.007 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8093 (http)
+25-11-07.21:21:04.015 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8093"]
+25-11-07.21:21:04.015 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-11-07.21:21:04.015 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-11-07.21:21:04.166 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-11-07.21:21:04.167 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1516 ms
+25-11-07.21:21:04.796 [main            ] INFO  Version                - Redisson 3.26.0
+25-11-07.21:21:05.550 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.21:21:05.577 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 192.168.150.128/192.168.150.128:6379
+25-11-07.21:21:05.659 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。{} {} {}
+25-11-07.21:21:05.667 [main            ] INFO  DynamicThreadPoolAutoConfig - 线程池信息
+25-11-07.21:21:05.747 [main            ] INFO  DynamicThreadPoolAutoConfig - ["threadPoolExecutor01","threadPoolExecutor02"]
+25-11-07.21:21:06.197 [main            ] INFO  EndpointLinksResolver  - Exposing 2 endpoint(s) beneath base path '/actuator'
+25-11-07.21:21:06.222 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8093"]
+25-11-07.21:21:06.231 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8093 (http) with context path ''
+25-11-07.21:21:06.248 [main            ] INFO  Application            - Started Application in 4.217 seconds (JVM running for 5.699)
+25-11-07.21:21:08.159 [http-nio-8093-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-11-07.21:21:08.159 [http-nio-8093-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-11-07.21:21:08.160 [http-nio-8093-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-11-07.21:21:30.030 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池数据上报】[domain.model.entity.ThreadPoolConfigEntity@290a8e12, domain.model.entity.ThreadPoolConfigEntity@2a9ca257]
+25-11-07.21:21:30.031 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@290a8e12
+25-11-07.21:21:30.033 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 【线程池参数上报】domain.model.entity.ThreadPoolConfigEntity@2a9ca257

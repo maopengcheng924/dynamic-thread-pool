@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>cn.bugstack.middleware</groupId>
-    <artifactId>dynamic-thread-pool</artifactId>
-    <version>1.0</version>
+    <groupId>cn.zt.middleware</groupId>
+    <artifactId>dynamic-thread-pool-zt</artifactId>
+    <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>dynamic-thread-pool-spring-boot-starter</artifactId>
+  <artifactId>dynamic-thread-pool-zt-spring-boot-starter</artifactId>
 
   <dependencies>
     <dependency>
@@ -25,6 +25,30 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-autoconfigure</artifactId>
     </dependency>
+
+    <!-- 配置Prometheus依赖，监控；actuator-上报、prometheus-采集、grafana-展示-->
+    <dependency>
+      <groupId>io.micrometer</groupId>
+      <artifactId>micrometer-registry-prometheus</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+
+    <!--        alibaba dingding sdk-->
+    <dependency>
+      <groupId>com.aliyun</groupId>
+      <artifactId>alibaba-dingtalk-service-sdk</artifactId>
+    </dependency>
+
+    <!--    apache codec通用编码工具包-->
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.17.0</version>
+    </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-aop</artifactId>
@@ -52,20 +76,15 @@
       <artifactId>redisson-spring-boot-starter</artifactId>
       <version>3.26.0</version>
     </dependency>
-
-    <!-- 配置Prometheus依赖，监控；actuator-上报、prometheus-采集、grafana-展示-->
     <dependency>
-      <groupId>io.micrometer</groupId>
-      <artifactId>micrometer-registry-prometheus</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-actuator</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 
   <build>
-    <finalName>dynamic-thread-pool-spring-boot-starter</finalName>
+    <finalName>dynamic-thread-pool-zt-spring-boot-starter</finalName>
     <resources>
       <resource>
         <directory>src/main/resources</directory>

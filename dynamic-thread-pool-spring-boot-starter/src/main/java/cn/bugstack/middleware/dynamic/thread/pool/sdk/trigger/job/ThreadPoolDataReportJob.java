@@ -2,7 +2,10 @@ package cn.bugstack.middleware.dynamic.thread.pool.sdk.trigger.job;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.IDynamicThreadPoolService;
+import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.INotifyService;
 import cn.bugstack.middleware.dynamic.thread.pool.sdk.domain.model.entity.ThreadPoolConfigEntity;
 import cn.bugstack.middleware.dynamic.thread.pool.sdk.registry.IRegistry;
 import org.slf4j.Logger;
@@ -21,8 +24,10 @@ public class ThreadPoolDataReportJob {
     private final IDynamicThreadPoolService dynamicThreadPoolService;
     
     // 注册中心接口，用于上报线程池数据
-    private final IRegistry registry;
-    
+    private final IRegistry      registry;
+    //拿到告警服务
+    @Resource
+    private       INotifyService notifyService;
     /**
      * 构造函数
      * @param dynamicThreadPoolService 动态线程池服务实例
@@ -37,12 +42,15 @@ public class ThreadPoolDataReportJob {
      * 定时执行的线程池数据上报任务
      * 每30秒执行一次，将线程池列表和详细配置参数上报到注册中心
      */
-    @Scheduled(cron = "0/30 * * * * ?")
+    //@Scheduled(cron = "0/30 * * * * ?")
+    @Scheduled(cron = "${dynamic.thread.pool.notify.report.cron}")
     public void execReportThreadPoolList(){
         // 查询所有线程池的配置信息
         List<ThreadPoolConfigEntity> threadPoolConfigEntities = dynamicThreadPoolService.queryThreadPoolList();
         // 上报线程池列表信息到注册中心
         registry.reportThreadPool(threadPoolConfigEntities);
+        //上报配置时，如果发生线程池有危险，调用平台告警功能发送通知
+        notifyService.sendIfThreadPoolHasDanger(threadPoolConfigEntities);
         // 记录线程池数据上报日志
         logger.info("【线程池数据上报】{}", threadPoolConfigEntities);
         

@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>cn.bugstack.middleware</groupId>
-        <artifactId>dynamic-thread-pool</artifactId>
-        <version>1.0</version>
+        <groupId>cn.zt.middleware</groupId>
+        <artifactId>dynamic-thread-pool-zt</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>dynamic-thread-pool-test</artifactId>
+    <artifactId>dynamic-thread-pool-zt-test</artifactId>
 
     <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -51,14 +57,21 @@
 
         <!-- 线程组件 -->
         <dependency>
-            <groupId>cn.bugstack.middleware</groupId>
-            <artifactId>dynamic-thread-pool-spring-boot-starter</artifactId>
-            <version>1.0</version>
+            <groupId>cn.zt.middleware</groupId>
+            <artifactId>dynamic-thread-pool-zt-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--    apache codec通用编码工具包-->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.17.0</version>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>dynamic-thread-pool-test-app</finalName>
+        <finalName>dynamic-thread-pool-zt-test-app</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -81,7 +94,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.6</version>
+                <version>2.12.4</version>
                 <configuration>
                     <skipTests>true</skipTests>
                     <testFailureIgnore>false</testFailureIgnore>
@@ -93,8 +106,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.7.12</version>
                 <configuration>
-                    <mainClass>cn.bugstack.Application</mainClass>
+                    <mainClass>cn.zt.Application</mainClass>
                     <layout>JAR</layout>
                 </configuration>
             </plugin>

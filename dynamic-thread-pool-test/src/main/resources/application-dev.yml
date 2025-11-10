@@ -24,6 +24,19 @@ dynamic:
         # redis port
         port: 6379
         password: 123321
+      notify:
+        enabled: true
+        userPlatform:
+          - DingDing
+          - FeiShu
+        accessToken:
+          dingDing: 008578d130993c11667719e366a680ac0dca08944400cabd0ed595ffff41f46b
+          feiShu:
+        secret:
+          dingDing: SEC1e99cfee6f77ae1febd25a86a71905ca4cf2f4e53877707f115c4f60fd46ecb0
+          feiShu:
+        report:
+          cron: "*/20 * * * * ?"
 management:
   endpoints:
     web:
@@ -32,6 +45,7 @@ management:
   endpoint:
     prometheus:
       enabled: true
+
 # 日志
 logging:
   level:
